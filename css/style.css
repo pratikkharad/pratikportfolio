@@ -1,0 +1,141 @@
+/* import fonts from fonts.css file */
+
+@import url(./font.css);
+
+/* Css variables */
+@import url(partials/_variables.css);
+
+/* Globle */
+
+@import url(./partials/_global.css);
+
+
+/* Start Navigation */
+
+.header_area .main-menu.navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+
+}
+
+.header_area .main-menu .navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* End Navigation */
+
+
+/* Banner Area */
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+
+
+.site-main.about-area {
+    padding: 8rem 5rem;
+}
+
+.about-title h2 > span {
+    display: block;
+    font: normal bold 49px/65px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.about-title .paragraph > p {
+    padding: .4rem 0;
+}
+
+/* End About Area */
+
+/* Project Area */
+
+.site-main .project-area {
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+    font: normal 700 25px/12px var(--roboto);
+}
+
+/*End Project Area */
+
+
+/* Font Area */
+.footer-area.social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
